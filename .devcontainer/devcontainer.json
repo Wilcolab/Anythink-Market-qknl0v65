@@ -1,0 +1,20 @@
+{
+  "name": "Python playground",
+  "image": "mcr.microsoft.com/devcontainers/python:0-3.11-bullseye",
+  "customizations": {
+    "codespaces": {
+      "openFiles": []
+    },
+    "vscode": {
+      "settings": {
+        "extensions.ignoreRecommendations": true,
+        "workbench.startupEditor": "none",
+        "workbench.welcomePage.walkthroughs.openOnInstall": false,
+        "workbench.welcomePage.experimental.videoTutorials": "off",
+        "github.codespaces.defaultExtensions": []
+      },
+      "extensions": ["ms-toolsai.jupyter@2025.8.0", "ms-python.python"]
+    }
+  },
+  "postStartCommand": "bash -c .devcontainer/setup.sh"
+}
